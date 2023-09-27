@@ -4,7 +4,7 @@ class Solution {
             return 0;
         int i = 1;
         for(; i<=x/i; i++)
-            if(x/i==i)
+            if(x==i*i)
                 return i;
         return i-1;
     }
