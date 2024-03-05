@@ -11,13 +11,12 @@ class Solution {
                 i++;
                 ans--;
             }
-            char b = s.charAt(j);
-            while(s.charAt(j)==b && i<=j)
+            a = s.charAt(j);
+            while(s.charAt(j)==a && i<=j)
             {
                 j--;
                 ans--;
             }
-            System.out.println(a +" "+b);
         }
         return ans;
     }
