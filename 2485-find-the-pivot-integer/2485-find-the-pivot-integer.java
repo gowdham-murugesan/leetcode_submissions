@@ -1,15 +1,10 @@
 class Solution {
     public int pivotInteger(int n) {
-        int rightSum = n * (n + 1) / 2;
-        for (int i = 1, leftSum = 0; i <= n; ++i) {
-            rightSum -= i;
-            if (leftSum == rightSum) {
-                return i;
-            } else if (leftSum > rightSum) {
-                return -1;
-            }
-            leftSum += i;
-        }
-        return -1;
+        int sum = n*(n+1)/2;
+        double a = Math.sqrt(sum);
+        if(a - Math.ceil(a)==0)
+            return (int)a;
+        else
+            return -1;
     }
 }
